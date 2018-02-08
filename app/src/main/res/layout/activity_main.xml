@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#54585b"
+    tools:context="com.example.imtiazaminsajid.calculator.MainActivity">
+
+
+    <Button
+        android:id="@+id/subBT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/divBT"
+        android:layout_alignEnd="@+id/answerTV"
+        android:layout_alignRight="@+id/answerTV"
+        android:layout_marginBottom="22dp"
+        android:text="Sub(-)" />
+
+    <Button
+        android:id="@+id/divBT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/subBT"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/subBT"
+        android:layout_marginBottom="46dp"
+        android:text="Div(/)" />
+
+    <Button
+        android:id="@+id/multiBT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/divBT"
+        android:layout_alignBottom="@+id/divBT"
+        android:layout_alignLeft="@+id/addBT"
+        android:layout_alignStart="@+id/addBT"
+        android:text="Multi(x)"
+        />
+
+    <Button
+        android:id="@+id/addBT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/subBT"
+        android:layout_alignBottom="@+id/subBT"
+        android:layout_alignLeft="@+id/answerTV"
+        android:layout_alignStart="@+id/answerTV"
+        android:text="Add(+)" />
+
+    <EditText
+        android:id="@+id/firstNumTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="41dp"
+        android:ems="5"
+        android:inputType="numberDecimal"
+        android:textColor="#16f916"
+        />
+
+    <EditText
+        android:id="@+id/secondNumTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="11dp"
+        android:ems="5"
+        android:textColor="#33d421"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/firstNumTV"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Enter 2nd Number"
+        android:textColor="#ffffff"/>
+
+    <EditText
+        android:id="@+id/answerTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:textColor="#fbff03" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/secondNumTV"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:text="Answer"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView2"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/textView2"
+        android:layout_marginTop="22dp"
+        android:text="Enter 1st Number"
+        android:textColor="#ffffff"/>
+
+    <EditText
+        android:id="@+id/evenodd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/addBT"
+        android:layout_alignStart="@+id/addBT"
+        android:layout_below="@+id/answerTV"
+        android:layout_marginTop="11dp"
+        android:textColor="#ffffff"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+</RelativeLayout>
